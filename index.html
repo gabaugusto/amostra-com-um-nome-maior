@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de notícias com foco em acessibilidade web">
+    <title>Portal de Notícias - Acessível e Inclusivo</title>
+    <link rel="stylesheet" href="exemplo.css">
+</head>
+<body>
+    <!-- Skip Link: permite pular para o conteúdo principal -->
+    <a href="#conteudo-principal" class="skip-link">Pular para conteúdo principal</a>
+
+    <!-- HEADER: Cabeçalho da página -->
+    <header class="cabecalho">
+        <div class="container">
+            <h1>Portal de Notícias</h1>
+            <p class="subtitulo">Informação acessível e inclusiva para todos</p>
+        </div>
+    </header>
+
+    <!-- NAV: Navegação principal -->
+    <nav class="navegacao-principal" aria-label="Menu principal">
+        <ul class="menu">
+            <li><a href="#conteudo-principal">Início</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#categorias">Categorias</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN: Conteúdo principal da página -->
+    <main id="conteudo-principal" class="conteudo-principal">
+        
+        <!-- Banner destacado -->
+        <section class="banner-destaque" aria-labelledby="titulo-destaque">
+            <div class="container">
+                <h2 id="titulo-destaque">Última Notícia em Destaque</h2>
+                <article class="noticia-destaque">
+                    <h3><a href="noticia1.html">Novas Diretrizes de Acessibilidade Web Publicadas</a></h3>
+                    <p class="data-publicacao">Publicado em: 22 de fevereiro de 2026</p>
+                    <p class="resumo">A W3C lança novas diretrizes WCAG 2.2 com foco em acessibilidade para tecnologias emergentes e dispositivos móveis.</p>
+                    <a href="noticia1.html" class="botao-leitura">Leia a notícia completa</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção de notícias -->
+        <section id="noticias" class="secao-noticias" aria-labelledby="titulo-noticias">
+            <div class="container">
+                <h2 id="titulo-noticias">Notícias Recentes</h2>
+                
+                <div class="grade-noticias">
+                    <!-- Notícia 1 -->
+                    <article class="card-noticia">
+                        <img 
+                            src="imagens/noticia1.jpg" 
+                            alt="Pessoas em reunião de trabalho discutindo acessibilidade digital"
+                            class="imagem-noticia"
+                        >
+                        <h3><a href="noticia1.html">Tendências em Acessibilidade Digital 2026</a></h3>
+                        <p class="data-publicacao">20 de fevereiro de 2026</p>
+                        <p class="resumo">Descubra as principais tendências que estão transformando a web acessível este ano.</p>
+                        <a href="noticia1.html" class="botao-leitura">Ler mais</a>
+                    </article>
+
+                    <!-- Notícia 2 -->
+                    <article class="card-noticia">
+                        <img 
+                            src="imagens/noticia2.jpg" 
+                            alt="Desenvolvedora testando aplicação em leitor de tela"
+                            class="imagem-noticia"
+                        >
+                        <h3><a href="noticia2.html">Como Testar Acessibilidade em Seu Projeto</a></h3>
+                        <p class="data-publicacao">18 de fevereiro de 2026</p>
+                        <p class="resumo">Guia prático com ferramentas e técnicas para validar a acessibilidade do seu website.</p>
+                        <a href="noticia2.html" class="botao-leitura">Ler mais</a>
+                    </article>
+
+                    <!-- Notícia 3 -->
+                    <article class="card-noticia">
+                        <img 
+                            src="imagens/noticia3.jpg" 
+                            alt="Usuário cego navegando website com teclado e leitor de tela"
+                            class="imagem-noticia"
+                        >
+                        <h3><a href="#noticias">Histórias de Inclusão: Acessibilidade na Prática</a></h3>
+                        <p class="data-publicacao">15 de fevereiro de 2026</p>
+                        <p class="resumo">Conheça histórias reais de como a acessibilidade web transforma vidas e experiências.</p>
+                        <a href="#noticias" class="botao-leitura">Ler mais</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de categorias -->
+        <section id="categorias" class="secao-categorias" aria-labelledby="titulo-categorias">
+            <div class="container">
+                <h2 id="titulo-categorias">Navegue por Categoria</h2>
+                <ul class="lista-categorias">
+                    <li><a href="#acessibilidade">Acessibilidade Web</a></li>
+                    <li><a href="#desenvolvimento">Desenvolvimento Frontend</a></li>
+                    <li><a href="#ux">Design UX/UI</a></li>
+                    <li><a href="#tecnologia">Tecnologia em Geral</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER: Rodapé da página -->
+    <footer class="rodape" id="contato">
+        <div class="container">
+            <section id="sobre" class="sobre-portal">
+                <h2>Sobre o Portal</h2>
+                <p>Este portal de notícias foi desenvolvido com foco em <strong>acessibilidade web</strong>, seguindo as diretrizes WCAG 2.2 e boas práticas de inclusão digital.</p>
+            </section>
+
+            <section class="informacoes-contato">
+                <h2>Contato</h2>
+                <address>
+                    <p>Email: <a href="mailto:contato@portalnoticias.com">contato@portalnoticias.com</a></p>
+                    <p>Telefone: <a href="tel:+5511999999999">(11) 9 9999-9999</a></p>
+                </address>
+            </section>
+
+            <section class="info-acessibilidade">
+                <h2>Acessibilidade</h2>
+                <p>Encontrou algum problema de acessibilidade? 
+                    <a href="mailto:acessibilidade@portalnoticias.com">Reporte aqui</a>
+                </p>
+            </section>
+
+            <p class="copyright">&copy; 2026 Portal de Notícias. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
