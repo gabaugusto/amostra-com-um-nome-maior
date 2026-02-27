@@ -8,9 +8,6 @@ seletor {
     propriedade: valor;
 }
 
-*/
-
-/*
     RESET de CSS
     O reset de CSS é uma técnica utilizada para eliminar as diferenças de estilo padrão entre os navegadores, garantindo que todos os elementos tenham um estilo consistente. Ele é importante porque cada navegador tem suas próprias regras de estilo padrão, o que pode resultar em uma aparência diferente para o mesmo código HTML em diferentes navegadores.
 */
@@ -25,6 +22,15 @@ seletor {
 body {
     background-color: #ccc;
 }
+
+/*
+    display: block;        -> o elemento ocupa toda a largura disponível, iniciando em uma nova linha. Não permite que outros elementos fiquem ao seu lado. Podemos usar altura (height) e largura (width) para controlar seu tamanho.
+    
+    display: inline;       -> o elemento ocupa apenas a largura necessária para seu conteúdo, permitindo que outros elementos fiquem ao seu lado. Não permite que altura (height) e largura (width) sejam aplicados.
+    
+    display: inline-block; -> o elemento se comporta como um elemento inline, mas permite que altura (height) e largura (width) sejam aplicados. Permite que outros elementos fiquem ao seu lado.
+
+*/
 
 header {
     background-color: #333;
@@ -46,8 +52,63 @@ h1 {
 }
 
 h2 {
-    color: blue;
+    color: #333;
     font-family: Arial;
     text-align: center;
     font-size: 50px;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    height: 40px;
+    background: #555;
+}
+
+ul a {
+    color: #fefefe;
+}
+
+.link-menu {
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all .6s ease;
+}
+
+.link-menu:hover {
+    color: #0a78a7;
+    text-decoration: underline;
+}
+
+.ativo {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    background: #aaa;
+    margin: 20px; /*Top 20px, Right 0px, Bottom 40px, Left 10px*/
+    padding: 20px 20px 20px 20px;
+    border: 5px solid #0a78a7;
+    
+}
+
+.banner-destaque {
+    margin: 0px;
+    border: 0;
+    background: url(imagens/background.jpg) no-repeat center center;
+    background-size: cover;
 }
